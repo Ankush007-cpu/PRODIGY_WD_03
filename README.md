@@ -40,7 +40,7 @@ This project is a **Tic-Tac-Toe web application** built using **HTML, CSS, and J
 ```
 tic-tac-toe/
 │── index.html        # Main HTML file
-│── style.css         # Stylesheet for game design
+│── css/output.css    # Stylesheet for game design
 │── script.js         # JavaScript for game logic
 └── README.md         # Project documentation
 ```
