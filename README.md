@@ -18,7 +18,7 @@ This project is a **Tic-Tac-Toe web application** built using **HTML, CSS, and J
 ## Installation & Setup
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/tic-tac-toe.git
+   git clone https://github.com/Ankush007-cpu/PRODIGY_WD_03.git
    ```
 2. Navigate to the project folder:
    ```bash
