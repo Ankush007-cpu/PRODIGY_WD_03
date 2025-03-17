@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+    <title>Tic-Tac-Toe Web application</title>
+</head>
+
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+
+    <nav class="m-3 rounded-full bg-gray-700 flex justify-center items-center">
+        <ul class="flex space-x-4 p-2">
+            <li
+                class="text-3xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                Tic-Tac-Toe</li>
+        </ul>
+    </nav>
+    <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-wrap justify-center items-center gap-5 p-3">
+            <button class="cursor-pointer human-vs-human font-bold text-xl p-3 rounded-2xl bg-white/70">Human vs
+                Human</button>
+            <button class="cursor-pointer human-vs-ai font-bold text-xl p-3 rounded-2xl bg-white/70">Human vs
+                AI</button>
+        </div>
+        <div class="time font-bold text-2xl px-5 rounded-3xl bg-white/60">Time: 10 seconds</div>
+        <div class="flex flex-wrap justify-center items-center gap-5">
+            <div class="player py-5 text-3xl text-white font-bold">Player Turn: X</div>
+            <button class="reset cursor-pointer font-bold text-1xl p-3 rounded-2xl bg-white/70">Reset</button>
+        </div>
+        <div
+            class="cont text-6xl font-bold bg-white/50 w-full max-w-md flex flex-wrap justify-center items-center rounded-2xl p-1 relative">
+            <button class="box border border-t-0 border-l-0 w-1/3 h-24"></button>
+            <button class="box border border-t-0 w-1/3 h-24"></button>
+            <button class="box border border-t-0 border-r-0 w-1/3 h-24"></button>
+            <button class="box border border-l-0 w-1/3 h-24"></button>
+            <button class="box border w-1/3 h-24"></button>
+            <button class="box border border-r-0 w-1/3 h-24"></button>
+            <button class="box border border-b-0 border-l-0 w-1/3 h-24"></button>
+            <button class="box border border-b-0 w-1/3 h-24"></button>
+            <button class="box border border-b-0 border-r-0 w-1/3 h-24"></button>
+            <div id="winning-line" class="absolute bg-red-500 hidden"></div>
+            <div id="winner-message"
+                class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-400 p-4 rounded-lg shadow-lg text-center hidden">
+                <h1 class="text-3xl font-bold text-amber-400 mb-2"></h1>
+            </div>
+            <div
+                class="game-over-message fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-400 p-4 rounded-lg shadow-lg text-center hidden">
+                <h1 class="text-3xl font-bold text-amber-400 mb-2"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
